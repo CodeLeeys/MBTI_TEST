@@ -1,0 +1,137 @@
+/*화면 전체 사용을 위한 세팅*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: serif;
+    color: #111;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* container 가로 가운데 정렬 */
+}
+
+/* 메인 컨테이너 내 컨텐츠 세로로 정렬 */
+.container {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 네비게이션 바 */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* 내부 위,아래 여백 0 왼쪽,오른쪽 여백 0*/
+    height: 100px;
+}
+
+/* 네비게이션 바 정렬 1:2:1 비율조정 */
+.navbar-left,
+.navbar-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.navbar-left {
+    margin-left: 130px;
+}
+
+/* 로고 이미지 크기 */
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+/* 네비게이션 메뉴 스타일 */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none; /* 리스트 양식 없애기 */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li > a {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu li > a:hover {
+    background: gray;
+    border-radius: 8px;
+}
+
+/*정렬을 위한 콘텐츠박스 */
+
+.layout-content {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 580px;
+}
+/*메인 콘텐츠 */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+    gap: 90px;
+}
+
+/* 좌측 MBTI 이미지 크기 */
+.main-content img {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}
+
+.right-content {
+    width: 450px;
+    height: 450px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-home {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 5px;
+    letter-spacing: 1px;
+    border-radius: none;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s ease;
+}
+
+.btn-home:hover {
+    background: gray;
+    color: white;
+}

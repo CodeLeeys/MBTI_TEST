@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI SIMPLE TEST</title>
+    <!-- 외부 스타일시트 연결 -->
+<link rel="stylesheet" href="mbti_test_js.css">
+</head>
+<body>
+    <!-- 메인 컨테이너 시작 -->
+    <div class="container">
+        <!-- 네비게이션 바 시작 -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="image/Logo_image.png" alt="DSU MBTI 로고" class="logo">
+            </div>
+            <div class="navbar-center">
+                <ul class="nav-menu">
+                    <li><a href="mbti_fin.html">Home</a></li>
+                    <li><a href="mbti_result_js.html">Result</a></li>
+                    <li><a href="">About MBTI</a></li>
+                </ul>
+        </div>
+        <!-- navbar flex 비율 맞추기 위한 블럭 -->
+        <div class="navbar-right"></div> 
+    </div>
+        <!-- 네비게이션 바 끝 -->
+    <!-- 메인 콘텐츠 -->
+    <div class="main-content">
+        <!-- 이미지는 src만 JS로 바꿔줌 -->
+        <img id="quiz-img" class="left-content" src="" alt="MBTI 질문 이미지">
+        <!-- 우측 콘텐츠 -->
+        <div class="right-content">
+            <div class="question" id="quiz-question"></div>
+            <form id="quiz-form"></form>
+            <div class="button-wrap">
+                <button id="prev-btn">prev</button>
+                <button id="next-btn">next</button>
+            </div>
+        </div>
+</div>
+<!-- 메인 컨테이너 끝 -->
+<script src="mbti_test.js"></script>
+</body>
+</html>

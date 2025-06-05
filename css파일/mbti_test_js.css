@@ -1,0 +1,164 @@
+/*화면 전체 사용을 위한 세팅*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: serif;
+    color: #111;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* container 가로 가운데 정렬 */
+}
+
+/* 메인 컨테이너 내 컨텐츠 세로로 정렬 */
+.container {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 네비게이션 바 */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* 내부 위,아래 여백 0 왼쪽,오른쪽 여백 0*/
+    height: 100px;
+}
+
+/* 네비게이션 바 정렬 1:2:1 비율조정 */
+.navbar-left,
+.navbar-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.navbar-left {
+    margin-left: 130px;
+}
+
+/* 로고 이미지 크기 */
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+/* 네비게이션 메뉴 스타일 */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none; /* 리스트 양식 없애기 */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li > a {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu li > a:hover {
+    background: gray;
+    border-radius: 8px;
+}
+
+/*메인 콘텐츠 */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1150px;
+    height: 600px;
+    gap: 100px;
+}
+
+/* 좌측 MBTI 이미지 크기 */
+.main-content img {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 500px;
+    height: 400px;
+    margin-right: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.right-content label {
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    display: block; 
+    /* 질문지 사이 간격을 벌리기 위해 필요 
+    label은 inline 요소라서 margin이 안먹힘 바꿔줘야함 */
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.right-content label:hover {
+    background: gray;
+    color: black;
+    border-radius: 8px;
+}
+
+
+#quiz-form input[type="radio"] {
+    display: none;
+}
+
+#quiz-form input[type="radio"]:checked + label {
+    background: gray;
+    color: black;
+    border-radius: 8px;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border: none;
+}
+
+button:hover {
+    color: #fff;
+    background: gray;
+}
+
+/* 버튼 비활성화 */
+button:disabled {
+    background: #ddd;
+    color: #aaa;
+    opacity: 0.7; /* 투명도 조절 */
+}

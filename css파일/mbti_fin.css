@@ -1,0 +1,132 @@
+/*화면 전체 사용을 위한 세팅*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: serif;
+    color: #111;
+    display: flex;
+    justify-content: center; /* container 가로 가운데 정렬 */
+}
+
+/* 메인 컨테이너 내 컨텐츠 세로로 정렬 */
+.container {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* 스크롤생김 방지 */
+}
+
+/* 네비게이션 바 */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* 내부 위,아래 여백 0 왼쪽,오른쪽 여백 0*/
+    height: 100px;
+}
+
+/* 네비게이션 바 정렬 1:2:1 비율조정 */
+.navbar-left,
+.navbar-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.navbar-left {
+    margin-left: 130px;
+}
+
+/* 로고 이미지 크기 */
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+/* 네비게이션 메뉴 스타일 */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none; /* 리스트 양식 없애기 */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li > a {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu li > a:hover {
+    background: gray;
+    border-radius: 8px;
+}
+
+
+/*메인 콘텐츠 */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1150px;
+    height: 600px;
+    gap: 50px;
+}
+
+/* 좌측 MBTI 아이콘 이미지 크기 */
+.main-content > img {
+    width: 400px;
+    height: auto;
+}
+
+.right-content {
+    margin-left: 30px;
+    min-width: 470px;
+    height: 400px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.right-content h1 {
+    font-size: 45px;
+}
+
+.right-content p {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#start-btn {
+    margin-top: 50px;
+    width: 180px;
+    height: 48px;
+    background: #111;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+#start-btn:hover {
+    color: #fff;
+    background: gray; 
+}
