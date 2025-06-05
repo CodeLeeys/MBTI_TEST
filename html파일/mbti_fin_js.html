@@ -18,7 +18,7 @@
                 <ul class="nav-menu">
                     <li><a href="../html파일/mbti_fin_js.html">Home</a></li>
                     <li><a href="../html파일/mbti_result_js.html">Result</a></li>
-                    <li><a href="">About MBTI</a></li>
+                    <li><a href="" id="update_yet">About MBTI</a></li>
                 </ul>
         </div>
         <!-- navbar flex 비율 맞추기 위한 블럭 -->
@@ -39,6 +39,11 @@
     </div>
 <!-- 메인 컨테이너 끝 -->
 <script>
+    //navbar about mbti는 미구현 - 업데이트 예정임을 알려주기
+    document.getElementById('update_yet').addEventListener('click', function(event) {
+    event.preventDefault(); // 링크 이동 방지
+    alert('About MBTI 는 업데이트 예정입니다! 추후에 기대해주세요. :)');
+}); 
     //start 버튼을 누르면 테스트 시작
     document.getElementById('start-btn').addEventListener('click', function() {
     //이전에 했던 result값이 저장된 로컬히스토리 초기화 (start버튼을 누를시 이전에 했던 결과 삭제)
