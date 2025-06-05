@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title> MBTI SIMPLE TEST</title>
 <!-- 외부 스타일시트 연결 -->
-<link rel="stylesheet" href="mbti_fin.css">
+<link rel="stylesheet" href="../css파일/mbti_fin.css">
 </head>
 <body>
 <!-- 메인 컨테이너 시작 -->
@@ -12,12 +12,12 @@
         <!-- 네비게이션 바 시작 -->
         <div class="navbar">
             <div class="navbar-left">
-                <img src="image/Logo_image.png" alt="DSU MBTI 로고" class="logo">
+                <img src="../image/Logo_image.png" alt="DSU MBTI 로고" class="logo">
             </div>
             <div class="navbar-center">
                 <ul class="nav-menu">
-                    <li><a href="mbti_fin.html">Home</a></li>
-                    <li><a href="mbti_result_js.html">Result</a></li>
+                    <li><a href="../html파일/mbti_fin_js.html">Home</a></li>
+                    <li><a href="../html파일/mbti_result_js.html">Result</a></li>
                     <li><a href="">About MBTI</a></li>
                 </ul>
         </div>
@@ -28,7 +28,7 @@
         <!-- 메인 콘텐츠 -->
         <div class="main-content">
             <!-- 좌측 메인 콘텐츠 -->
-            <img class="left-content" src="image/mbti_fin.png" alt="MBTI 지표">
+            <img class="left-content" src="../image/mbti_fin.png" alt="MBTI 지표">
             <!-- 우측 메인 콘텐츠 -->
             <div class="right-content">
                 <h1>Find your MBTI<br>in munuites!</h1>
@@ -44,7 +44,7 @@
     //이전에 했던 result값이 저장된 로컬히스토리 초기화 (start버튼을 누를시 이전에 했던 결과 삭제)
     localStorage.removeItem('mbtiResult');
     //test 페이지로 이동
-    window.location.href = 'mbti_test_js.html';
+    window.location.href = '../html파일/mbti_test_js.html';
 });
 </script>
 </body>
