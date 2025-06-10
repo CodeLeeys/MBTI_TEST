@@ -17,7 +17,7 @@
             <div class="navbar-center">
                 <ul class="nav-menu">
                     <li><a href="../html파일/mbti_fin_js.html">Home</a></li>
-                    <li><a href="../html파일/mbti_result_js.html">Result</a></li>
+                    <li><a href="../html파일/mbti_result_js.html" id="result-bool">Result</a></li>
                     <li><a href="" id="update_yet">About MBTI</a></li>
                 </ul>
         </div>
@@ -48,8 +48,23 @@
     document.getElementById('start-btn').addEventListener('click', function() {
     //이전에 했던 result값이 저장된 로컬히스토리 초기화 (start버튼을 누를시 이전에 했던 결과 삭제)
     localStorage.removeItem('mbtiResult');
+    // 퀴즈 진행 상태 초기화
+    localStorage.removeItem('mbtiQuizState');
     //test 페이지로 이동
     window.location.href = '../html파일/mbti_test_js.html';
+});
+    // result nav바를 누를때 이전 결과값이 남아있으면 결과값 페이지, 없으면 실패페이지
+    document.getElementById('result-bool').addEventListener('click', function(event) {
+    event.preventDefault();
+    const mbtiResult = localStorage.getItem('mbtiResult');
+    const quizState = localStorage.getItem('mbtiQuizState');
+    if (mbtiResult) {
+    // 결과값이 있으면 결과 페이지로 이동
+    window.location.href = '../html파일/mbti_result_js.html';
+    } else {
+    // 아무것도 없으면 실패 페이지로 이동
+    window.location.href = '../html파일/mbti_result_fail_js.html';
+    }
 });
 </script>
 </body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI SIMPLE TEST</title>
+    <!-- 외부 스타일시트 연결 -->
+<link rel="stylesheet" href="../css파일/mbti_result_fail_js.css">
+</head>
+<body>
+    <!-- 메인 컨테이너 시작 -->
+    <div class="container">
+        <!-- 네비게이션 바 시작 -->
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="../image/Logo_image.png" alt="DSU MBTI 로고" class="logo">
+            </div>
+            <div class="navbar-center">
+                <ul class="nav-menu">
+                    <li><a href="../html파일/mbti_fin_js.html">Home</a></li>
+                    <li><a href="../html파일/mbti_test_js.html">Result</a></li>
+                    <li><a href="" id="update_yet">About MBTI</a></li>
+                </ul>
+        </div>
+        <!-- navbar flex 비율 맞추기 위한 블럭 -->
+        <div class="navbar-right"></div> 
+    </div>
+        <!-- 네비게이션 바 끝 -->
+    <!-- 메인 콘텐츠 -->
+    <div class="main-content">
+        <img id="fail-img" class="left-content" src="../image/result_fail.png" alt="MBTI result fail 페이지">
+        <!-- 우측 콘텐츠 -->
+        <div class="right-content">
+            <div class="information">
+                <h2>테스트를 아직<br>완료하지 않았습니다.</h2>
+                <p> 결과를 확인하시려면 테스트를 먼저 완료하셔야 합니다.</p>
+            </div>
+            <div class="button-wrap">
+                <a href="../html파일/mbti_test_js.html" class="btn" id="resumeBtn">하던 질문지로 돌아가기</a>
+                <a href="../html파일/mbti_fin_js.html" class="btn">시작 페이지로 돌아가기</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //navbar about mbti는 미구현 - 업데이트 예정임을 알려주기
+    document.getElementById('update_yet').addEventListener('click', function(event) {
+    event.preventDefault(); // 링크 이동 방지
+    alert('About MBTI 는 업데이트 예정입니다! 추후에 기대해주세요. :)');
+});
+</script>

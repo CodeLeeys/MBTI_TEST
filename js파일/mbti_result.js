@@ -74,7 +74,7 @@ const resultData = {
     info: "사업가",
     desc: "영리하고 에너지 넘치며 관찰력이 뛰어난 성격으로, 스릴 넘치는 삶을 진정으로 즐기는 성격입니다."
     },
-    ENFP: {
+    ESFP: {
     img: "../image/ESFP.연예인.png",
     info: "연예인",
     desc: "즉흥적이고 넘치는 에너지와 열정으로 주변 사람들을 즐겁게 하는 성격입니다."
@@ -95,6 +95,19 @@ document.getElementById("result-detail").innerHTML = `
     `;
 };
 
+window.onload = function() {
+    const mbtiType = localStorage.getItem("mbtiResult");
+    const resultInfo = resultData[mbtiType];
+    if (!mbtiType || !resultInfo) {
+        window.location.replace("../html파일/mbti_result_fail_js.html"); // 실패시 실패페이지로 이동
+        return;
+    }
+    document.getElementById("result-img").src = resultInfo.img;
+    document.getElementById("result-detail").innerHTML = `
+        <h1>${mbtiType}</h1><h3>${resultInfo.info}</h3>
+        <p>${resultInfo.desc}</p>
+    `;
+};
 //navbar about mbti는 미구현 - 업데이트 예정임을 알려주기
 document.getElementById('update_yet').addEventListener('click', function(event) {
     event.preventDefault(); // 링크 이동 방지

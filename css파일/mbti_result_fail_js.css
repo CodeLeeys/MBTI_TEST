@@ -18,14 +18,15 @@ body {
     flex-direction: column;
 }
 
+/* 네비게이션 바 */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    height: 10vh; /* 100px → 7vh */
+    height: 10vh; /* 100px → 10vh */
 }
 
+/* 네비게이션 바 정렬 1:2:1 비율조정 */
 .navbar-left,
 .navbar-right {
     flex: 1;
@@ -45,11 +46,13 @@ body {
     margin-left: 9vw; /* 130px → 9vw */
 }
 
+/* 로고 이미지 크기 */
 .logo {
     width: 9vw; /* 130px → 9vw */
     height: auto;
 }
 
+/* 네비게이션 메뉴 스타일 */
 .nav-menu {
     display: flex;
     justify-content: center;
@@ -69,65 +72,66 @@ body {
 
 .nav-menu li > a:hover {
     background: gray;
-    border-radius: 0.5vw; /* 8px → 0.5vw */
+    border-radius: 0.5vw;
 }
 
-/* 정렬을 위한 콘텐츠박스 */
-.layout-content {
-    display: flex;
-    flex-direction: column;
-    width: 70vw; /* 1000px → 65vw */
-    height: 85vh; /* 580px → 38vh */
-}
-
-/* 메인 콘텐츠 */
+/*메인 콘텐츠 */
 .main-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70vw; /* 1000px → 65vw */
-    height: 70vh; /* 600px → 40vh */
-    margin-top: 6vh;
-    gap: 6vw; /* 90px → 6vw */
+    width: 78vw; /* 1200px → 78vw */
+    height: 80vh; /* 600px → 40vh */
+    gap: 4vw; /* 90px → 4vw */
+    margin-top: 5vh;
 }
 
 /* 좌측 MBTI 이미지 크기 */
 .main-content img {
-    width: 29vw; /* 450px → 29vw */
-    height: 29vw; /* 450px → 29vw */
-    object-fit: contain;
+    width: 30vw; /* 450px → 30vw */
+    height: 70vh; /* 500px → 70vh */
+    object-fit: cover;
+    margin-right: 6.5vw; /* 100px → 6.5vw */
 }
 
 .right-content {
     width: 29vw; /* 450px → 29vw */
-    height: 29vw; /* 450px → 29vw */
+    height: 75vh; /* 550px → 75vh */
     color: black;
     font-size: 2rem; /* 30px → 2rem */
     font-weight: bold;
+    margin-right: 6.5vw; /* 100px → 6.5vw */
 }
 
 .button-wrap {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 1.4vw; /* 20px → 1.4vw */
+    margin-top: 7vh; /* 100px → 7vh */
+    margin-right: 7.5vw;
+    gap: 2vw; /* 30px → 2vw */
 }
 
-.btn-home {
+.btn {
+    width: 20vw; /* 300px → 20vw */
+    height: auto;
+    text-decoration: none;
     display: inline-block;
     background: black;
     color: white;
-    padding: 0.35vw; /* 5px → 0.35vw */
-    letter-spacing: 0.07em; /* 1px → 0.07em */
+    padding: 0.35vw;
+    letter-spacing: 0.07em;
     border-radius: 0;
     font-size: 1.25rem; /* 20px → 1.25rem */
-    text-decoration: none;
     cursor: pointer;
     text-align: center;
     transition: background 0.2s ease;
 }
 
-.btn-home:hover {
+.btn:hover {
     background: gray;
     color: white;
 }

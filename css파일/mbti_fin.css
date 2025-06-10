@@ -1,33 +1,29 @@
-/*화면 전체 사용을 위한 세팅*/
 body {
     margin: 0;
     padding: 0;
-    background: #fff;
+    width: 100vw;
+    height: 100vh;
     font-family: serif;
     color: #111;
     display: flex;
-    justify-content: center; /* container 가로 가운데 정렬 */
+    justify-content: center;
 }
 
-/* 메인 컨테이너 내 컨텐츠 세로로 정렬 */
 .container {
     width: 70vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* 스크롤생김 방지 */
+    overflow: hidden;
 }
 
-/* 네비게이션 바 */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0; /* 내부 위,아래 여백 0 왼쪽,오른쪽 여백 0*/
-    height: 100px;
+    height: 10vh;
 }
 
-/* 네비게이션 바 정렬 1:2:1 비율조정 */
 .navbar-left,
 .navbar-right {
     flex: 1;
@@ -40,90 +36,79 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 5vw; /* 70px → 5vw */
 }
 
 .navbar-left {
-    margin-left: 130px;
+    margin-left: 9vw; /* 130px → 9vw */
 }
 
-/* 로고 이미지 크기 */
 .logo {
-    width: 130px;
+    width: 9vw; /* 130px → 9vw */
     height: auto;
 }
 
-/* 네비게이션 메뉴 스타일 */
 .nav-menu {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    list-style: none; /* 리스트 양식 없애기 */
+    gap: 2.7vw; /* 40px → 2.7vw */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .nav-menu li > a {
-    font-size: 20px;
+    font-size: 1.3rem; /* 20px → 1.3rem (기본 폰트 16px 기준) */
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
     color: black;
 }
 
-.nav-menu li > a:hover {
-    background: gray;
-    border-radius: 8px;
-}
-
-
-/*메인 콘텐츠 */
 .main-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 1150px;
-    height: 600px;
-    gap: 50px;
+    width: 80vw; /* 1150px → 80vw */
+    height: 40vw; /* 600px → 40vw (적절히 조정 필요) */
+    gap: 5vw; /* 50px → 5vw */
 }
 
-/* 좌측 MBTI 아이콘 이미지 크기 */
 .main-content > img {
-    width: 400px;
+    width: 28vw; /* 400px → 28vw */
     height: auto;
 }
 
 .right-content {
-    margin-left: 30px;
-    min-width: 470px;
-    height: 400px;
-    margin-right: 30px;
-    margin-bottom: 50px;
+    margin-left: 2vw; /* 30px → 2vw */
+    min-width: 32vw; /* 470px → 32vw */
+    height: 27vw; /* 400px → 27vw */
+    margin-right: 2vw; /* 30px → 2vw */
+    margin-bottom: 3vw; /* 50px → 3vw */
 }
 
 .right-content h1 {
-    font-size: 45px;
+    font-size: 2.8rem; /* 45px → 2.8rem */
 }
 
 .right-content p {
     color: black;
-    font-size: 25px;
+    font-size: 1.6rem; /* 25px → 1.6rem */
     font-weight: bold;
 }
 
 #start-btn {
-    margin-top: 50px;
-    width: 180px;
-    height: 48px;
+    margin-top: 3vw; /* 50px → 3vw */
+    width: 12vw; /* 180px → 12vw */
+    height: 3vw; /* 48px → 3vw */
     background: #111;
     color: #fff;
     border: none;
     font-weight: bold;
-    font-size: 16px;
-    border: none;
+    font-size: 1rem; /* 16px → 1rem */
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 0.07em;
     transition: background-color 0.3s ease;
 }
 #start-btn:hover {

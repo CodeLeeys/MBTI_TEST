@@ -214,8 +214,25 @@ formMBTI.addEventListener("change", (e) => {
     if (e.target.name === "answer") {
         Useranswer[currentQuestion] = e.target.value;
         nextBtn.disabled = false;
+         // 이때만 상태 저장
+        localStorage.setItem('mbtiQuizState', JSON.stringify({currentQuestion,Useranswer}));
     }
 });
+
+// result에서 퀴즈 페이지로 돌아오기를 선택할때 불러오기
+const savedState = localStorage.getItem('mbtiQuizState');
+if (savedState) {
+    const quizState = JSON.parse(savedState);
+    currentQuestion = quizState.currentQuestion; // 인덱스 사용
+    Useranswer = quizState.Useranswer;
+    // currentQuestion 인덱스를 활용해 해당 문제로 이동
+    renderQuiz();
+} else {
+// 저장된 상태가 없으면 첫 문제부터 시작
+    currentQuestion = 0;
+    Useranswer = [];
+    renderQuiz();
+}
 
 // mbti 결과값 출력 함수
 function calculateMBTI(answer) {
@@ -272,5 +289,16 @@ document.getElementById('update_yet').addEventListener('click', function(event) 
     event.preventDefault(); // 링크 이동 방지
     alert('About MBTI 는 업데이트 예정입니다! 추후에 기대해주세요. :)');
 }); 
+
+// 퀴즈 도중 result를 누르면 실패 페이지로 이동
+document.querySelector('.nav-menu li:nth-child(2) a').addEventListener('click', function(event) {
+    event.preventDefault(); // 기본 링크 이동 막기
+    const mbtiResult = localStorage.getItem('mbtiResult');
+    if (mbtiResult) {
+        window.location.href = '../html파일/mbti_result_js.html';
+    } else {
+        window.location.href = '../html파일/mbti_result_fail_js.html';
+    }
+});
 
 window.onload = renderQuiz;
