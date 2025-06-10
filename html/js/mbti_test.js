@@ -1,7 +1,7 @@
 // 퀴즈 데이터 이미지와 성향 구별 퀴즈와 선택지
 const quizData = [
     {
-        img: "../image/I vs E_1.png",
+        img: "image/I vs E_1.png",
         question: " 쉬는날 침대에서 눈을 떴을때, 당신은? ",
         options: [
             { text: " A. 여러 사람과 약속을 잡고 외출하거나 파티에 참석해서 활기를 얻는다. ", value: "E" },
@@ -9,7 +9,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/I vs E_2.png",
+        img: "image/I vs E_2.png",
         question: "사람이 많은 모임에 참석해야 할 때, 당신은?",
         options: [
             { text: " A. 끝까지 남아서 사람들과 대화하며 분위기를 즐기는 편이다. ", value: "E" },
@@ -17,7 +17,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/I vs E_3.png",
+        img: "image/I vs E_3.png",
         question: "하루 일과가 끝난 후 집에 들어왔을때, 당신은?",
         options: [
             { text: "A. 아직도 에너지가 남아 더 활동하고 싶다.", value: "E" },
@@ -25,7 +25,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/I vs E_4.png",
+        img: "image/I vs E_4.png",
         question: "낯선 환경에서 새로운 사람을 만날때, 당신은?",
         options: [
             { text: "A. 그렇다. 자연스럽게 대화를 시작한다.", value: "E" },
@@ -33,7 +33,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/I vs E_5.png", 
+        img: "image/I vs E_5.png", 
         question: "새로운 사람들과 모임에서 대화할 때, 당신은?",
         options: [
             { text: "A. 적극적으로 대화를 주도하며 에너지를 얻는다.", value: "E" },
@@ -41,7 +41,7 @@ const quizData = [
             ]
         },
     {
-        img: "../image/N vs S_1.png",
+        img: "image/N vs S_1.png",
         question: "새로운 정보를 접할 때, 당신은?",
         options: [
             { text: "A. 구체적인 사실과 세부사항에 더 집중한다.", value: "S" },
@@ -49,7 +49,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/N vs S_2.png",
+        img: "image/N vs S_2.png",
         question: "문제를 해결할 때, 당신은?",
         options: [
             { text: "A. 실제 경험과 사례를 중시하며 검증된 방법을 따른다.", value: "S" },
@@ -57,7 +57,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/N vs S_3.png",
+        img: "image/N vs S_3.png",
         question: "친구와 대화할 때, 당신은?",
         options: [
             { text: "A. 현재의 현실적인 상황과 구체적인 사실에 집중한다.", value: "S" },
@@ -65,7 +65,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/N vs S_4.png",
+        img: "image/N vs S_4.png",
         question: "계획을 세울 때, 당신은?",
         options: [
             { text: "A. 구체적이고 실용적인 단계를 먼저 정리한다.", value: "S" },
@@ -73,7 +73,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/N vs S_5.png",
+        img: "image/N vs S_5.png",
         question: "새로운 환경에 적응할 때, 당신은?",
         options: [
             { text: "A. 익숙한 방법을 따르는 것이 더 편하다.", value: "S" },
@@ -81,7 +81,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/T vs F_1.png",
+        img: "image/T vs F_1.png",
         question: "친구가 회사에서 혼이 났다고 하소연할 때, 당신은?",
         options: [
             { text: "A. 상황을 논리적으로 분석해서 친구에게 현실적인 조언을 해준다.", value: "T" },
@@ -89,7 +89,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/T vs F_2.png",
+        img: "image/T vs F_2.png",
         question: "팀 프로젝트에서 의견 충돌이 생겼을 때, 당신은?",
         options: [
             { text: "A. 가장 합리적이고 효율적인 의견에 힘을 보탠다.", value: "T" },
@@ -97,7 +97,7 @@ const quizData = [
         ]
     },
     {   
-        img: "../image/T vs F_3.png",
+        img: "image/T vs F_3.png",
         question: "누군가 실수를 했을 때, 당신은?",
         options: [
             { text: "A. 실수의 원인과 해결 방법을 중심으로 이야기한다.", value: "T" },
@@ -105,7 +105,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/T vs F_4.png",
+        img: "image/T vs F_4.png",
         question: "중요한 결정을 앞두고 있을 때, 당신은?",
         options: [
             { text: "A. 논리적 근거와 데이터, 객관적 사실을 바탕으로 결정한다.", value: "T" },
@@ -113,7 +113,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/T vs F_5.png",
+        img: "image/T vs F_5.png",
         question: "친구가 약속을 잊어버려 실망했을 때, 당신은?",
         options: [
             { text: "A. 왜 약속을 잊었는지 이유를 묻고 다음엔 어떻게 할지 논의한다.", value: "T" },
@@ -121,7 +121,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/P vs J_1.png",
+        img: "image/P vs J_1.png",
         question: "여행을 준비할 때, 당신은?",
         options: [
             { text: "A. 미리 일정표를 꼼꼼하게 짜고 숙소와 교통편을 모두 예약해둔다.", value: "J" },
@@ -129,7 +129,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/P vs J_2.png",
+        img: "image/P vs J_2.png",
         question: "주말에 할 일이 생겼을 때, 당신은?",
         options: [
             { text: "A. 우선순위를 정해서 시간 계획을 세우고 차근차근 처리한다.", value: "J" },
@@ -137,7 +137,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/P vs J_3.png",
+        img: "image/P vs J_3.png",
         question: "친구와 약속을 잡을 때, 당신의 스타일은?",
         options: [
             { text: "A. 날짜, 시간, 장소를 미리 정하고 확정된 계획을 선호한다.", value: "J" },
@@ -145,7 +145,7 @@ const quizData = [
         ]
     },
     {
-        img: "../image/P vs J_4.png",
+        img: "image/P vs J_4.png",
         question: "새로운 프로젝트를 시작할 때, 당신은?",
         options: [
             { text: "A. 전체 일정과 마감일, 세부 단계까지 미리 계획을 세운다.", value: "J" },
@@ -153,7 +153,7 @@ const quizData = [
     ]
     },
     {
-        img: "../image/P vs J_5.png",
+        img: "image/P vs J_5.png",
         question: "예상치 못한 일이 생겼을 때, 당신은?",
         options: [
             { text: "A. 계획이 틀어지면 당황하거나 스트레스를 받는다.", value: "J" },
@@ -279,7 +279,7 @@ nextBtn.addEventListener("click", () => {
         const mbtiType = calculateMBTI(Useranswer);
         localStorage.setItem("mbtiResult", mbtiType);
         // 결과 페이지로 이동
-        window.location.href = "../html파일/mbti_result_js.html";
+        window.location.href = "mbti_result_js.html";
     }
     }
 );
@@ -295,9 +295,9 @@ document.querySelector('.nav-menu li:nth-child(2) a').addEventListener('click', 
     event.preventDefault(); // 기본 링크 이동 막기
     const mbtiResult = localStorage.getItem('mbtiResult');
     if (mbtiResult) {
-        window.location.href = '../html파일/mbti_result_js.html';
+        window.location.href = 'mbti_result_js.html';
     } else {
-        window.location.href = '../html파일/mbti_result_fail_js.html';
+        window.location.href = 'mbti_result_fail_js.html';
     }
 });
 

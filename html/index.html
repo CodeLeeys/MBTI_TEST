@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title> MBTI SIMPLE TEST</title>
 <!-- 외부 스타일시트 연결 -->
-<link rel="stylesheet" href="../css파일/index.css">
+<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <!-- 메인 컨테이너 시작 -->
@@ -12,12 +12,12 @@
         <!-- 네비게이션 바 시작 -->
         <div class="navbar">
             <div class="navbar-left">
-                <img src="../image/Logo_image.png" alt="DSU MBTI 로고" class="logo">
+                <img src="image/Logo_image.png" alt="DSU MBTI 로고" class="logo">
             </div>
             <div class="navbar-center">
                 <ul class="nav-menu">
-                    <li><a href="../html파일/index.html">Home</a></li>
-                    <li><a href="../html파일/mbti_result_js.html" id="result-bool">Result</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mbti_result_js.html" id="result-bool">Result</a></li>
                     <li><a href="" id="update_yet">About MBTI</a></li>
                 </ul>
         </div>
@@ -28,7 +28,7 @@
         <!-- 메인 콘텐츠 -->
         <div class="main-content">
             <!-- 좌측 메인 콘텐츠 -->
-            <img class="left-content" src="../image/index.png" alt="MBTI 지표">
+            <img class="left-content" src="image/index.png" alt="MBTI 지표">
             <!-- 우측 메인 콘텐츠 -->
             <div class="right-content">
                 <h1>Find your MBTI<br>in munuites!</h1>
@@ -51,7 +51,7 @@
     // 퀴즈 진행 상태 초기화
     localStorage.removeItem('mbtiQuizState');
     //test 페이지로 이동
-    window.location.href = '../html파일/mbti_test_js.html';
+    window.location.href = 'mbti_test_js.html';
 });
     // result nav바를 누를때 이전 결과값이 남아있으면 결과값 페이지, 없으면 실패페이지
     document.getElementById('result-bool').addEventListener('click', function(event) {
@@ -60,10 +60,10 @@
     const quizState = localStorage.getItem('mbtiQuizState');
     if (mbtiResult) {
     // 결과값이 있으면 결과 페이지로 이동
-    window.location.href = '../html파일/mbti_result_js.html';
+    window.location.href = 'mbti_result_js.html';
     } else {
     // 아무것도 없으면 실패 페이지로 이동
-    window.location.href = '../html파일/mbti_result_fail_js.html';
+    window.location.href = 'mbti_result_fail_js.html';
     }
 });
 </script>
