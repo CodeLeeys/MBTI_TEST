@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: black;
     font-family: serif;
     color: #111;
     width: 100vw;
@@ -12,6 +12,7 @@ body {
 
 /* 메인 컨테이너 내 컨텐츠 세로로 정렬 */
 .container {
+    background-color: white;
     width: 70vw;
     height: 100vh;
     display: flex;
@@ -20,6 +21,7 @@ body {
 
 /* 네비게이션 바 */
 .navbar {
+    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,16 +31,20 @@ body {
 /* 네비게이션 바 정렬 1:2:1 비율조정 */
 .navbar-left,
 .navbar-right {
+    background-color: red;
     flex: 1;
     display: flex;
     align-items: center;
+    height: 10vh;
 }
 
 .navbar-center {
+    background-color: orange;
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
     margin-left: 5vw; /* 70px → 5vw */
 }
 
@@ -54,8 +60,11 @@ body {
 
 /* 네비게이션 메뉴 스타일 */
 .nav-menu {
+    background-color: yellowgreen;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 10vh;
     gap: 2.7vw; /* 40px → 2.7vw */
     list-style: none;
     padding: 0;
@@ -77,34 +86,37 @@ body {
 
 /*메인 콘텐츠 */
 .main-content {
+    background-color: blueviolet;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    width: 78vw; /* 1200px → 78vw */
-    height: 80vh; /* 600px → 40vh */
-    gap: 4vw; /* 90px → 4vw */
-    margin-top: 5vh;
+    width: 70vw; /* 1200px → 70vw */
+    height: 90vh; /* 600px → 90vh */
+    gap: 3vw; /* 90px → 3vw */
 }
 
 /* 좌측 MBTI 이미지 크기 */
 .main-content img {
+    background-color: blue;
     width: 30vw; /* 450px → 30vw */
     height: 70vh; /* 500px → 70vh */
     object-fit: cover;
-    margin-right: 6.5vw; /* 100px → 6.5vw */
+    margin-left: 4.5vw; /* 100px → 4.5vw */
 }
 
 .right-content {
-    width: 29vw; /* 450px → 29vw */
-    height: 75vh; /* 550px → 75vh */
+    background-color: blue;
+    width: 30vw; /* 450px → 30vw */
+    height: 70vh; /* 550px → 70vh */
     color: black;
-    font-size: 2rem; /* 30px → 2rem */
+    font-size: 1.8rem; /* 30px → 1.8rem */
     font-weight: bold;
     margin-right: 6.5vw; /* 100px → 6.5vw */
 }
 
 .button-wrap {
+    background-color: bisque;
     display: flex;
     flex-direction: column;
     justify-content: center;
