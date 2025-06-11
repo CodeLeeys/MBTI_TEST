@@ -29,6 +29,7 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
+    height: 10vh;
 }
 
 .navbar-center {
@@ -36,6 +37,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
     margin-left: 5vw; /* 70px → 5vw */
 }
 
@@ -76,12 +78,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 80vw; /* 1150px → 80vw */
-    height: 40vw; /* 600px → 40vw (적절히 조정 필요) */
+    height: 90vh; /* 600px → 90vh */
     gap: 5vw; /* 50px → 5vw */
 }
 
 .main-content > img {
-    width: 28vw; /* 400px → 28vw */
+    width: 26vw; /* 400px → 28vw */
     height: auto;
 }
 
