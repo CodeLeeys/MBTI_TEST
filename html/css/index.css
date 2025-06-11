@@ -65,6 +65,11 @@ body {
     color: black;
 }
 
+.nav-menu li > a:hover {
+    background: gray;
+    border-radius: 0.5vw; /* 8px -> 0.5vw */
+}
+
 .main-content {
     display: flex;
     flex-direction: row;

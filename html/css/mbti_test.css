@@ -70,6 +70,11 @@ body {
     cursor: pointer;
 }
 
+.nav-menu li > a:hover {
+    background: gray;
+    border-radius: 0.5vw; /* 8px -> 0.5vw */
+}
+
 /*메인 콘텐츠 */
 .main-content {
     display: flex;
