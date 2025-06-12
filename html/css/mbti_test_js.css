@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: #fff;
     font-family: serif;
     color: #111;
     width: 100vw;
@@ -30,6 +29,7 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
+    height: 10vh;
 }
 
 .navbar-center {
@@ -37,6 +37,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
     margin-left: 5vw; /* 70px -> 5vw */
 }
 
@@ -76,9 +77,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80vw; /* 1150px -> 80vw */
-    height: 40vw; /* 600px -> 40vw */
-    gap: 6vw; /* 100px -> 6vw */
+    width: 70vw; /* 1150px -> 70vw */
+    height: 90vh; /* 600px -> 90vh */
+    gap: 5vw; /* 100px -> 6vw */
 }
 
 .main-content img {
@@ -90,9 +91,9 @@ body {
 .right-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-width: 32vw; /* 500px -> 32vw */
-    height: 27vw; /* 400px -> 27vw */
+    justify-content: center;
+    width: 32vw; /* 500px -> 32vw */
+    height: 60vh; /* 400px -> 60vh */
     margin-right: 3vw; /* 50px -> 3vw */
     color: black;
     font-size: 2rem; /* 30px -> 2rem */
@@ -105,7 +106,7 @@ body {
     font-size: 1.6rem; /* 25px -> 1.6rem */
     font-weight: bold;
     display: block;
-    margin-bottom: 2vw; /* 30px -> 2vw */
+    margin-bottom: 3vh; /* 30px -> 2vw */
     cursor: pointer;
 }
 
@@ -129,6 +130,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 2vw; /* 30px -> 2vw */
+    margin-bottom: 5vh;
 }
 
 button {
@@ -141,12 +143,12 @@ button {
 }
 
 button:hover {
-    color: #fff;
+    color: white;
     background: gray;
 }
 
 button:disabled {
-    background: #ddd;
-    color: #aaa;
+    background: #aea7a7;
+    color: white;
     opacity: 0.7; /* 투명도 조절 */
 }

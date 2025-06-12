@@ -179,12 +179,7 @@ function renderQuiz() {
     imgMBTI.src = q.img; // 이미지 바꾸기
     questionMBTI.innerHTML = `<p>${q.question}</p>`; // 질문 바꾸기
     formMBTI.innerHTML = ""; // 선택지 비우기
-    // 줄바꿈을 넣고 싶은 인덱스 배열
-    const brIndexList = [1, 2, 3, 4, 11, 10, 14];
     let questionText = q.question;
-    if (brIndexList.includes(currentQuestion)){
-        questionText = questionText.replace("당신은?", "<br>당신은?");
-    }
     questionMBTI.innerHTML = `<p>${questionText}</p>`;
     q.options.forEach((opt,idx) => {
     // 고유 id 생성
