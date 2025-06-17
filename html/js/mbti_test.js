@@ -191,7 +191,7 @@ function renderQuiz() {
     if (Useranswer[currentQuestion] === opt.value) input.checked = true;
     // label 생성
     const label = document.createElement("label");
-    label.for = inputId;
+    label.htmlFor = inputId;
     label.textContent = opt.text;
     // 형제로 추가
     formMBTI.appendChild(input);
