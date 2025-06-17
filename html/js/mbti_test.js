@@ -240,7 +240,7 @@ function calculateMBTI(answer) {
     indexMap.forEach((item) => {
         let A_Score = 0;
         let B_Score = 0;
-        item.range.forEach(i => {
+        item.range.forEach((i) => {
             if (answer[i] === item.A) A_Score = A_Score+1;
             else if (answer[i] === item.B) B_Score = B_Score+1;
         });
