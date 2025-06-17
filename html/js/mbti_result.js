@@ -83,31 +83,23 @@ const resultData = {
 
 //mbti_test.js.html에서 저장된 로컬스토리지 불러오기
 window.onload = function() {
-// localStorage에서 MBTI 결과 읽기
-const mbtiType = localStorage.getItem("mbtiResult");
-// 결과 데이터에서 이미지와 설명 찾기
-const resultInfo = resultData[mbtiType];
-// 이미지와 설명 표시
-document.getElementById("result-img").src = resultInfo.img;
-document.getElementById("result-detail").innerHTML = `
-    <h1>${mbtiType}</h1><h3>${resultInfo.info}</h3>
-    <p>${resultInfo.desc}</p>
-    `;
-};
-
-window.onload = function() {
+    // localStorage에서 MBTI 결과 읽기
     const mbtiType = localStorage.getItem("mbtiResult");
+    // 결과 데이터에서 이미지와 설명 찾기
     const resultInfo = resultData[mbtiType];
+    // 결과값이 없거나 데이터가 없으면 실패 페이지로 이동
     if (!mbtiType || !resultInfo) {
-        window.location.replace("mbti_result_fail_js.html"); // 실패시 실패페이지로 이동
+        window.location.replace("mbti_result_fail_js.html");
         return;
     }
+    // 이미지와 설명 표시
     document.getElementById("result-img").src = resultInfo.img;
     document.getElementById("result-detail").innerHTML = `
         <h1>${mbtiType}</h1><h3>${resultInfo.info}</h3>
         <p>${resultInfo.desc}</p>
     `;
 };
+
 //navbar about mbti는 미구현 - 업데이트 예정임을 알려주기
 document.getElementById('update_yet').addEventListener('click', function(event) {
     event.preventDefault(); // 링크 이동 방지

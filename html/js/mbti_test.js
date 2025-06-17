@@ -163,7 +163,7 @@ const quizData = [
 ];
 
 // 상태 변수
-let currentQuestion = 0; //현재 몇번째 질문인지 카운팅
+let currentQuestion = 0; //현재 질문 인덱스 초기화
 let Useranswer= []; // quizData에서 value값 저장
 
 // 3. HTML 요소 가져오기
@@ -179,8 +179,6 @@ function renderQuiz() {
     imgMBTI.src = q.img; // 이미지 바꾸기
     questionMBTI.innerHTML = `<p>${q.question}</p>`; // 질문 바꾸기
     formMBTI.innerHTML = ""; // 선택지 비우기
-    let questionText = q.question;
-    questionMBTI.innerHTML = `<p>${questionText}</p>`;
     q.options.forEach((opt,idx) => {
     // 고유 id 생성
     const inputId = `answer${currentQuestion},${idx}`;
@@ -193,7 +191,7 @@ function renderQuiz() {
     if (Useranswer[currentQuestion] === opt.value) input.checked = true;
     // label 생성
     const label = document.createElement("label");
-    label.setAttribute("for", inputId);
+    label.for = inputId;
     label.textContent = opt.text;
     // 형제로 추가
     formMBTI.appendChild(input);
@@ -286,7 +284,7 @@ document.getElementById('update_yet').addEventListener('click', function(event) 
 }); 
 
 // 퀴즈 도중 result를 누르면 실패 페이지로 이동
-document.querySelector('.nav-menu li:nth-child(2) a').addEventListener('click', function(event) {
+document.getElementById('result-bool').addEventListener('click', function(event) {
     event.preventDefault(); // 기본 링크 이동 막기
     const mbtiResult = localStorage.getItem('mbtiResult');
     if (mbtiResult) {
