@@ -166,14 +166,14 @@ const quizData = [
 let currentQuestion = 0; //현재 질문 인덱스 초기화
 let Useranswer= []; // quizData에서 value값 저장
 
-// 3. HTML 요소 가져오기
+// HTML 요소 가져오기
 const imgMBTI = document.getElementById("quiz-img");
 const questionMBTI = document.getElementById("quiz-question");
 const formMBTI = document.getElementById("quiz-form");
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 
-// 4. 문제 표시 함수
+// 문제 표시 함수
 function renderQuiz() {
     const q = quizData[currentQuestion];
     imgMBTI.src = q.img; // 이미지 바꾸기
