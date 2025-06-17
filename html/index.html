@@ -41,8 +41,8 @@
 <!-- 메인 컨테이너 끝 -->
 <script>
     //navbar about mbti는 미구현 - 업데이트 예정임을 알려주기
-    document.getElementById('update_yet').addEventListener('click', function(event) {
-    event.preventDefault(); // 링크 이동 방지
+    document.getElementById('update_yet').addEventListener('click', (e) => {
+    e.preventDefault(); // 링크 이동 방지
     alert('About MBTI 는 업데이트 예정입니다! 추후에 기대해주세요. :)');
 }); 
     //start 버튼을 누르면 테스트 시작
@@ -55,8 +55,8 @@
     window.location.href = 'mbti_test_js.html';
 });
     // result nav바를 누를때 이전 결과값이 남아있으면 결과값 페이지, 없으면 실패페이지
-    document.getElementById('result-bool').addEventListener('click', function(event) {
-    event.preventDefault();
+    document.getElementById('result-bool').addEventListener('click', (e) => {
+    e.preventDefault();
     const mbtiResult = localStorage.getItem('mbtiResult');
     if (mbtiResult) {
     // 결과값이 있으면 결과 페이지로 이동

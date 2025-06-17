@@ -196,7 +196,7 @@ function renderQuiz() {
     // 형제로 추가
     formMBTI.appendChild(input);
     formMBTI.appendChild(label);
-    });// => 화살표함수 opt 지역변수에 다음 코드 값을 return
+    });
     prevBtn.disabled = currentQuestion === 0;
     // 답을 골라야 next가 활성화되게 하려면 아래 코드 추가
     nextBtn.disabled = !Useranswer[currentQuestion];
@@ -237,7 +237,7 @@ function calculateMBTI(answer) {
         { A: 'J', B: 'P', range: [15, 16, 17, 18, 19] }
     ];
     let result = '';
-    indexMap.forEach(item => {
+    indexMap.forEach((item) => {
         let A_Score = 0;
         let B_Score = 0;
         item.range.forEach(i => {
@@ -278,14 +278,14 @@ nextBtn.addEventListener("click", () => {
 );
 
 //navbar about mbti는 미구현 - 업데이트 예정임을 알려주기
-document.getElementById('update_yet').addEventListener('click', function(event) {
-    event.preventDefault(); // 링크 이동 방지
+document.getElementById('update_yet').addEventListener('click', (e) => {
+    e.preventDefault(); // 링크 이동 방지
     alert('About MBTI 는 업데이트 예정입니다! 추후에 기대해주세요. :)');
 }); 
 
 // 퀴즈 도중 result를 누르면 실패 페이지로 이동
-document.getElementById('result-bool').addEventListener('click', function(event) {
-    event.preventDefault(); // 기본 링크 이동 막기
+document.getElementById('result-bool').addEventListener('click', (e) => {
+    e.preventDefault(); // 기본 링크 이동 막기
     const mbtiResult = localStorage.getItem('mbtiResult');
     if (mbtiResult) {
         window.location.href = 'mbti_result_js.html';

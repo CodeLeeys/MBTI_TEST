@@ -101,7 +101,7 @@ window.onload = function() {
 };
 
 //navbar about mbti는 미구현 - 업데이트 예정임을 알려주기
-document.getElementById('update_yet').addEventListener('click', function(event) {
-    event.preventDefault(); // 링크 이동 방지
+document.getElementById('update_yet').addEventListener('click', (e) => {
+    e.preventDefault(); // 링크 이동 방지
     alert('About MBTI 는 업데이트 예정입니다! 추후에 기대해주세요. :)');
 }); 
