@@ -46,7 +46,7 @@
     alert('About MBTI 는 업데이트 예정입니다! 추후에 기대해주세요. :)');
 }); 
     //start 버튼을 누르면 테스트 시작
-    document.getElementById('start-btn').addEventListener('click', function() {
+    document.getElementById('start-btn').addEventListener('click', () => {
     //이전에 했던 result값이 저장된 로컬히스토리 초기화 (start버튼을 누를시 이전에 했던 결과 삭제)
     localStorage.removeItem('mbtiResult');
     // 퀴즈 진행 상태 초기화
